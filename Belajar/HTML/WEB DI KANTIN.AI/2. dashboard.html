@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - DiKantin Polije</title>
+</head>
+<body>
+
+    <!-- Header Atas -->
+    <header>
+        <div>
+            <img src="assets/images/logo-dikantin-small.png" alt="Logo Kantin Polije">
+            <span>Kantin Polije</span>
+        </div>
+        <div>
+            <input type="text" placeholder="Cari makanan atau minuman...">
+        </div>
+        <div>
+            <a href="keranjang.html">🛒 Keranjang</a>
+        </div>
+    </header>
+
+    <div style="display: flex;">
+        <!-- Navigasi Sidebar -->
+        <nav style="width: 200px;">
+            <ul>
+                <li><a href="dashboard.html">⌂ Beranda</a></li>
+                <li><a href="menu.html">▦ Menu</a></li>
+                <li><a href="keranjang.html">🛒 Keranjang</a></li>
+                <li><a href="riwayat.html">🕒 Riwayat</a></li>
+                <li><a href="pengaturan.html">⚙ Pengaturan</a></li>
+            </ul>
+        </nav>
+
+        <!-- Area Konten Utama -->
+        <main style="flex: 1; padding: 20px;">
+            
+            <!-- Banner Selamat Datang -->
+            <section style="background-color: #1a4a40; color: white; padding: 20px; border-radius: 8px;">
+                <h2>Selamat datang di Kantin Polije</h2>
+                <p>Pesan makanan favoritmu dengan mudah.</p>
+                <a href="menu.html" style="background-color: white; color: #1a4a40; padding: 10px; text-decoration: none; border-radius: 4px;">Lihat Menu →</a>
+            </section>
+
+            <!-- Menu Populer -->
+            <section style="margin-top: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h3>Menu Populer</h3>
+                    <a href="menu.html">Lihat semua</a>
+                </div>
+
+                <div style="display: flex; gap: 20px;">
+                    <!-- Item 1 -->
+                    <article>
+                        <img src="assets/images/nasi-ayam-geprek.jpg" alt="Nasi Ayam Geprek" width="150">
+                        <h4>Nasi Ayam Geprek</h4>
+                        <p>Rp 12.000</p>
+                    </article>
+
+                    <!-- Item 2 -->
+                    <article>
+                        <img src="assets/images/mie-ayam.jpg" alt="Mie Ayam" width="150">
+                        <h4>Mie Ayam</h4>
+                        <p>Rp 10.000</p>
+                    </article>
+
+                    <!-- Item 3 -->
+                    <article>
+                        <img src="assets/images/es-teh.jpg" alt="Es Teh Manis" width="150">
+                        <h4>Es Teh Manis</h4>
+                        <p>Rp 3.000</p>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>

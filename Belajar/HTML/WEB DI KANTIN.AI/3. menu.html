@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu - DiKantin Polije</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="assets/images/logo-dikantin-small.png" alt="Logo Kantin Polije">
+            <span>Kantin Polije</span>
+        </div>
+        <div>
+            <input type="text" placeholder="Cari makanan atau minuman...">
+        </div>
+        <div>
+            <a href="keranjang.html">🛒</a>
+        </div>
+    </header>
+
+    <div style="display: flex;">
+        <!-- Navigasi Sidebar -->
+        <nav style="width: 200px;">
+            <ul>
+                <li><a href="dashboard.html">⌂ Beranda</a></li>
+                <li><a href="menu.html">▦ Menu</a></li>
+                <li><a href="keranjang.html">🛒 Keranjang</a></li>
+                <li><a href="riwayat.html">🕒 Riwayat</a></li>
+                <li><a href="pengaturan.html">⚙ Pengaturan</a></li>
+            </ul>
+        </nav>
+
+        <!-- Area Konten Utama -->
+        <main style="flex: 1; padding: 20px;">
+            <h2>Daftar Menu</h2>
+            
+            <!-- Filter Kategori -->
+            <nav>
+                <button style="background-color: #1a4a40; color: white;">Semua</button>
+                <button>Makanan</button>
+                <button>Minuman</button>
+            </nav>
+            <br>
+
+            <!-- Grid Daftar Menu -->
+            <section style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <article>
+                    <img src="assets/images/ayam-geprek.jpg" alt="Ayam Geprek" width="150">
+                    <h4>Ayam Geprek</h4>
+                    <p>Rp 12.000</p>
+                </article>
+                <article>
+                    <img src="assets/images/mi-ayam.jpg" alt="Mi Ayam" width="150">
+                    <h4>Mi Ayam</h4>
+                    <p>Rp 12.000</p>
+                </article>
+                <article>
+                    <img src="assets/images/mi-ayam-bakso.jpg" alt="Mi Ayam Bakso" width="150">
+                    <h4>Mi Ayam Bakso</h4>
+                    <p>Rp 12.000</p>
+                </article>
+                <article>
+                    <img src="assets/images/es-teh.jpg" alt="Es Teh" width="150">
+                    <h4>Es Teh</h4>
+                    <p>Rp 12.000</p>
+                </article>
+                <article>
+                    <img src="assets/images/es-jeruk.jpg" alt="Es Jeruk" width="150">
+                    <h4>Es Jeruk</h4>
+                    <p>Rp 12.000</p>
+                </article>
+                <article>
+                    <img src="assets/images/jus-alpukat.jpg" alt="Jus Alpukat" width="150">
+                    <h4>Jus Alpukat</h4>
+                    <p>Rp 12.000</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

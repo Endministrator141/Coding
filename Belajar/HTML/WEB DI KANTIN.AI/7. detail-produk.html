@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Nasi Ayam Geprek</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/images/logo-dikantin-small.png" alt="Logo Kantin Polije" width="40">
+            <strong>Kantin Polije</strong>
+        </div>
+        <div>
+            <input type="text" placeholder="Cari makanan atau minuman..." style="padding: 8px 15px; width: 300px; border-radius: 20px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <a href="keranjang.html" style="text-decoration: none; font-size: 20px;">🛒</a>
+        </div>
+    </header>
+
+    <div style="display: flex;">
+        <!-- Sidebar Navigation -->
+        <nav style="width: 200px; padding: 20px; background-color: #1a4a40; color: white; min-height: 80vh;">
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 15px;"><a href="dashboard.html" style="color: white; text-decoration: none;">⌂ Beranda</a></li>
+                <li style="margin-bottom: 15px;"><a href="menu.html" style="color: white; text-decoration: none;">▦ Menu</a></li>
+                <li style="margin-bottom: 15px;"><a href="keranjang.html" style="color: white; text-decoration: none;">🛒 Keranjang</a></li>
+                <li style="margin-bottom: 15px;"><a href="riwayat.html" style="color: white; text-decoration: none;">🕒 Riwayat</a></li>
+                <li style="margin-bottom: 15px;"><a href="pengaturan.html" style="color: white; text-decoration: none;">⚙ Pengaturan</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main style="flex: 1; padding: 30px; display: flex; gap: 30px;">
+            <div>
+                <img src="assets/images/nasi-ayam-geprek.jpg" alt="Nasi Ayam Geprek" width="350" style="border-radius: 15px;">
+            </div>
+            <div>
+                <h2>Nasi Ayam Geprek</h2>
+                <h3 style="color: #1a4a40;">Rp 12.000</h3>
+                <p style="color: #666;">★ 4.8 (120 ulasan)</p>
+                <p>Nasi putih dengan ayam geprek sambal dan lalapan.</p>
+                
+                <form action="keranjang.html" method="get">
+                    <h4>Pilih level pedas</h4>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <label style="border: 2px solid #1a4a40; padding: 8px 15px; border-radius: 8px; cursor: pointer;">
+                            <input type="radio" name="level" value="1" checked hidden> Level 1
+                        </label>
+                        <label style="background-color: #eee; padding: 8px 15px; border-radius: 8px; cursor: pointer;">
+                            <input type="radio" name="level" value="2" hidden> Level 2
+                        </label>
+                        <label style="background-color: #eee; padding: 8px 15px; border-radius: 8px; cursor: pointer;">
+                            <input type="radio" name="level" value="3" hidden> Level 3
+                        </label>
+                    </div>
+
+                    <button type="submit" style="background-color: #1a4a40; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                        Tambah ke Keranjang
+                    </button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

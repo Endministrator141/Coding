@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - DiKantin Polije</title>
+</head>
+<body>
+
+    <!-- Header & Sidebar dilewati untuk menghemat ruang, strukturnya sama -->
+
+    <div style="display: flex;">
+        <nav style="width: 200px;"> <!-- ... --> </nav>
+
+        <main style="flex: 1; padding: 20px; display: flex; gap: 20px;">
+            
+            <section style="flex: 2;">
+                <h2>Checkout</h2>
+                
+                <form action="qris.html" method="get">
+                    <!-- Opsi Pengantaran -->
+                    <fieldset>
+                        <legend>Alamat Pengantaran</legend>
+                        <label>
+                            <input type="radio" name="pengantaran" value="kantin" checked> Ambil di Kantin
+                        </label><br>
+                        <label>
+                            <input type="radio" name="pengantaran" value="alamat"> Kirim ke Alamat
+                        </label>
+                    </fieldset>
+                    <br>
+                    
+                    <!-- Opsi Pembayaran -->
+                    <fieldset>
+                        <legend>Metode Pembayaran</legend>
+                        <label>
+                            <input type="radio" name="pembayaran" value="qris" checked> QRIS (GoPay, OVO, Dana)
+                        </label><br>
+                        <label>
+                            <input type="radio" name="pembayaran" value="transfer"> Transfer Bank
+                        </label>
+                    </fieldset>
+                </form>
+            </section>
+
+            <!-- Ringkasan Pesanan -->
+            <aside style="flex: 1; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+                <h3>Ringkasan</h3>
+                <p>Nasi Ayam Geprek<br>Rp 12.000</p>
+                <p>Es Teh Manis<br>Rp 3.000</p>
+                <hr>
+                <h4>Total Rp 16.000</h4>
+                <button type="submit" form="checkoutForm" style="background-color: #1a4a40; color: white; width: 100%; padding: 10px;">Bayar Sekarang</button>
+            </aside>
+
+        </main>
+    </div>
+
+</body>
+</html>

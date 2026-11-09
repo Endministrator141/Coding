@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran QRIS - DiKantin Polije</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/images/logo-dikantin-small.png" alt="Logo Kantin Polije" width="40">
+            <strong>Kantin Polije</strong>
+        </div>
+        <div>
+            <input type="text" placeholder="Cari makanan atau minuman..." style="padding: 8px 15px; width: 300px; border-radius: 20px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <a href="keranjang.html" style="text-decoration: none; font-size: 20px;">🛒</a>
+        </div>
+    </header>
+
+    <main style="max-width: 700px; margin: 20px auto; padding: 20px; border: 1px solid #eee; border-radius: 12px;">
+        <h2>Pembayaran QRIS</h2>
+        <p style="color: #666;">Contoh tampilan pemindaian di Kantin Polije.</p>
+
+        <section style="border: 1px solid #ddd; border-radius: 10px; padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                <strong>Kantin Polije</strong>
+                <strong style="color: #1a4a40;">QRIS</strong>
+            </div>
+
+            <div style="display: flex; gap: 30px; margin-top: 20px; align-items: center;">
+                <div>
+                    <img src="assets/images/qris-demo.png" alt="QR Code Demo" width="180" style="border: 1px solid #ccc; padding: 10px;">
+                </div>
+                <div>
+                    <h4>Cara Pembayaran</h4>
+                    <ol>
+                        <li>
+                            <strong>Buka fitur Scan QR</strong><br>
+                            <small style="color: #666;">Di aplikasi bank atau dompet digital Anda.</small>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Scan QRIS dan periksa nominal</strong><br>
+                            <strong style="color: #1a4a40;">RP. 16.000</strong><br>
+                            <small style="color: #666;">Pindai QRIS asli dari kasir untuk membayar.</small>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div style="background-color: #e0f2f1; color: #004d40; text-align: center; padding: 10px; border-radius: 6px; margin-top: 20px;">
+                <strong>DEMO — Tidak untuk pembayaran</strong><br>
+                <small>Pola contoh ini tidak memuat tujuan pembayaran.</small>
+            </div>
+        </section>
+
+        <br>
+        <form action="tracking.html" method="get">
+            <button type="submit" style="background-color: #1a4a40; color: white; width: 100%; padding: 12px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer;">
+                Tracking Pesanan
+            </button>
+        </form>
+    </main>
+
+</body>
+</html>

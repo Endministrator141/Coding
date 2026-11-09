@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lacak Pesanan - DiKantin Polije</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/images/logo-dikantin-small.png" alt="Logo Kantin Polije" width="40">
+            <strong>Kantin Polije</strong>
+        </div>
+        <div>
+            <input type="text" placeholder="Cari makanan atau minuman..." style="padding: 8px 15px; width: 300px; border-radius: 20px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <a href="keranjang.html" style="text-decoration: none; font-size: 20px;">🛒</a>
+        </div>
+    </header>
+
+    <div style="display: flex;">
+        <!-- Sidebar Navigation -->
+        <nav style="width: 200px; padding: 20px; background-color: #1a4a40; color: white; min-height: 80vh;">
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 15px;"><a href="dashboard.html" style="color: white; text-decoration: none;">⌂ Beranda</a></li>
+                <li style="margin-bottom: 15px;"><a href="menu.html" style="color: white; text-decoration: none;">▦ Menu</a></li>
+                <li style="margin-bottom: 15px;"><a href="keranjang.html" style="color: white; text-decoration: none;">🛒 Keranjang</a></li>
+                <li style="margin-bottom: 15px;"><a href="riwayat.html" style="color: white; text-decoration: none;">🕒 Riwayat</a></li>
+                <li style="margin-bottom: 15px;"><a href="pengaturan.html" style="color: white; text-decoration: none;">⚙ Pengaturan</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main style="flex: 1; padding: 30px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2>Lacak Pesanan</h2>
+                <a href="dashboard.html" style="background-color: #1a4a40; color: white; padding: 8px 15px; text-decoration: none; border-radius: 6px;">Beranda →</a>
+            </div>
+
+            <!-- Card Nomor Pesanan -->
+            <div style="background-color: #1a4a40; color: white; padding: 15px 20px; border-radius: 8px; margin-top: 10px;">
+                <p style="margin: 0; font-size: 14px;">Nomor Pesanan</p>
+                <h3 style="margin: 5px 0 0 0;">#KP2812345</h3>
+            </div>
+
+            <!-- Timeline Status -->
+            <section style="margin-top: 30px; padding-left: 20px; border-left: 3px solid #1a4a40;">
+                <article style="margin-bottom: 25px;">
+                    <h4 style="margin: 0; color: #1a4a40;">● Pesanan diterima</h4>
+                    <p style="margin: 5px 0 0 0; color: #666;">Pesanan sudah masuk ke sistem.</p>
+                </article>
+
+                <article style="margin-bottom: 25px;">
+                    <h4 style="margin: 0; color: #1a4a40;">● Sedang diproses</h4>
+                    <p style="margin: 5px 0 0 0; color: #666;">Penjual sedang menyiapkan pesanan.</p>
+                </article>
+
+                <article style="margin-bottom: 25px;">
+                    <h4 style="margin: 0; color: #aaa;">○ Siap diambil</h4>
+                    <p style="margin: 5px 0 0 0; color: #aaa;">Pesanan siap diambil di kantin.</p>
+                </article>
+
+                <article style="margin-bottom: 10px;">
+                    <h4 style="margin: 0; color: #aaa;">○ Selesai</h4>
+                </article>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang - DiKantin Polije</title>
+</head>
+<body>
+
+    <!-- Header Sama -->
+    <header>
+        <div>
+            <img src="assets/images/logo-dikantin-small.png" alt="Logo Kantin Polije">
+            <span>Kantin Polije</span>
+        </div>
+        <div>
+            <input type="text" placeholder="Cari makanan atau minuman...">
+        </div>
+        <div>
+            <a href="keranjang.html">🛒</a>
+        </div>
+    </header>
+
+    <div style="display: flex;">
+        <!-- Navigasi Sidebar Sama -->
+        <nav style="width: 200px;">
+            <!-- ... (Sama seperti menu.html) ... -->
+        </nav>
+
+        <!-- Area Konten Utama -->
+        <main style="flex: 1; padding: 20px;">
+            <h2>Keranjang Saya</h2>
+            
+            <section>
+                <!-- Item 1 -->
+                <article style="display: flex; align-items: center; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px;">
+                    <img src="assets/images/nasi-ayam-geprek.jpg" alt="Nasi Ayam Geprek" width="100">
+                    <div style="margin-left: 15px;">
+                        <h4>Nasi Ayam Geprek</h4>
+                        <p style="color: #1a4a40;">Rp 12.000</p>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article style="display: flex; align-items: center; border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 10px;">
+                    <img src="assets/images/es-teh.jpg" alt="Es Teh Manis" width="100">
+                    <div style="margin-left: 15px;">
+                        <h4>Es Teh Manis</h4>
+                        <p style="color: #1a4a40;">Rp 3.000</p>
+                    </div>
+                </article>
+            </section>
+
+            <form action="checkout.html" method="get">
+                <button type="submit" style="background-color: #1a4a40; color: white; padding: 15px; width: 100%; border-radius: 5px;">Lanjut ke Checkout</button>
+            </form>
+
+        </main>
+    </div>
+
+</body>
+</html>
